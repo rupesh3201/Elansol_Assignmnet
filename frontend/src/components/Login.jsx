@@ -2,6 +2,7 @@ import  { useState } from 'react';
 import { Form, Button, Container } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import '../../src/Css/login.css'
 
 function Login() {
   const [formData, setFormData] = useState({
@@ -35,9 +36,9 @@ function Login() {
   };
 
   return (
-    <div className="d-flex align-items-center justify-content-center vh-100">
+    <div className="d-flex align-items-center justify-content-center vh-100 bg-teal-500">
       <Container className="form-container text-center">
-        <h2>Login</h2>
+        <h2 className='Sign_title'>Sign In</h2>
         <Form onSubmit={handleSubmit}>
           <Form.Group controlId="formEmail">
             <Form.Label>Email address</Form.Label>
